@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "traditional-oriental-gong-white-background-front-view_501761-1615.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -48,8 +48,34 @@ class SelectViewController: BaseTableViewController {
                                                  switchON: false,
                                                  switchAction: nil,
                                                  cellDidSelect: { [weak self] _ in
-                self?.selectedModels = [model]
-                self?.setupRow()
+                
+                if model.data == .woodFish {
+                    self?.selectedModels = [model]
+                    self?.setupRow()
+                } else {
+                    if let iaped = UserInfoCenter.shared.loadValue(.iaped) as? [String], iaped.contains(model.data.id) {
+                        self?.selectedModels = [model]
+                        self?.setupRow()
+                    } else {
+                        self?.showAlert(title: "提示",
+                                        message: "要購買才可以用喔\n\(model.data.id)",
+                                        confirmTitle: "前往購買",
+                                        cancelTitle: "取消",
+                                        confirmAction: {
+                            if let product = IAPCenter.shared.products.first(where: {$0.productIdentifier == model.data.id}) {
+                                IAPCenter.shared.buy(product: product)
+                            }
+                           
+                        },
+                                        cancelAction: {
+                            
+                        })
+                    }
+                }
+
+                
+
+
             }))
         }
         self.adapter?.updateTableViewData(rowModels: rowModels)

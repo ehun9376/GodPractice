@@ -81,6 +81,7 @@ class SettingViewController: BaseTableViewController {
                 self?.showToast(message: "您的購買項目已恢復")
                 self?.setupRowModel()
             }
+            IAPCenter.shared.restore()
         })
         
         self.rowModels.append(reStoreRow)

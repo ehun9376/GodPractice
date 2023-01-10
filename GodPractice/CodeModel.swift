@@ -17,21 +17,24 @@ class CodeModel: Equatable {
     
     var number: Int?
     
-    init(text: String? = nil, number: Int? = nil) {
+    var data: ProductID = .woodFish
+    
+    init(text: String? = nil, number: Int? = nil, data: ProductID) {
         self.text = text
         self.number = number
+        self.data = data
     }
     
     
-    static let woodFish: CodeModel = .init(text: ProductID.woodFish.text, number: 0)
+    static let woodFish: CodeModel = .init(text: ProductID.woodFish.text, number: 0, data: .woodFish)
     
-    static let drum: CodeModel = .init(text: ProductID.drum.text, number: 1)
+    static let drum: CodeModel = .init(text: ProductID.drum.text, number: 1, data: .drum)
     
-    static let ring: CodeModel = .init(text: ProductID.ring.text, number: 2)
+    static let ring: CodeModel = .init(text: ProductID.ring.text, number: 2, data: .ring)
     
-    static let inSin: CodeModel = .init(text: ProductID.inSin.text, number: 3)
+    static let inSin: CodeModel = .init(text: ProductID.inSin.text, number: 3, data: .inSin)
     
-    static let gong: CodeModel = .init(text: ProductID.gong.text, number: 4)
+    static let gong: CodeModel = .init(text: ProductID.gong.text, number: 4, data: .gong)
 
     static let items: [CodeModel] = [
         .woodFish,

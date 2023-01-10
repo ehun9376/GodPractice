@@ -23,6 +23,9 @@ class UserInfoCenter: NSObject {
         
         ///現在在用哪一種
         case current = "currentType"
+        
+        ///總數
+        case count = "count"
     }
     
     func storeValue(_ type: UserInfoDataType, data: Any?) {

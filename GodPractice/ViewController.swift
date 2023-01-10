@@ -17,12 +17,13 @@ class ViewController: BaseViewController {
     
     @IBOutlet weak var settingButton: UIButton!
     
+    @IBOutlet weak var countLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.setSettingButton()
-        self.setSoundButton(defaultSet: true, type: ProductID.woodFish)
-        self.setAVFoundation(type: ProductID.woodFish)
+        self.addCount()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,10 +34,13 @@ class ViewController: BaseViewController {
             let types: [ProductID] = [.woodFish,.gong,.inSin,.ring,.drum]
             
             if let type = types.first(where: {$0.text == current}) {
-                self.setSoundButton(type: type)
+                self.setSoundButton(defaultSet: true, type: type)
                 self.setAVFoundation(type: type)
             }
             
+        } else {
+            self.setSoundButton(defaultSet: true, type: ProductID.woodFish)
+            self.setAVFoundation(type: ProductID.woodFish)
         }
     }
     
@@ -48,17 +52,30 @@ class ViewController: BaseViewController {
         let vc = SettingViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func addCount() {
+        
+        var count = 0
+        
+        if let total = UserInfoCenter.shared.loadValue(.count) as? Int {
+            count = total + 1
+        }
+        
+        UserInfoCenter.shared.storeValue(.count, data: count)
+        
+        self.countLabel.text = "總共已經點擊:\(count)次"
+    }
+    
     func setSoundButton(defaultSet: Bool = false, type: ProductID) {
         
         
         
-        if defaultSet {
-            self.soundButton.configuration = nil
-            self.soundButton.layer.cornerRadius = self.settingButton.frame.height / 2
-            self.soundButton.clipsToBounds = true
-            self.soundButton.setTitle(nil, for: .normal)
-            self.soundButton.addTarget(self, action: #selector(soundButtonAction), for: .touchUpInside)
-        }
+        self.soundButton.configuration = nil
+        self.soundButton.layer.cornerRadius = self.settingButton.frame.height / 2
+        self.soundButton.clipsToBounds = true
+        self.soundButton.setTitle(nil, for: .normal)
+        self.soundButton.addTarget(self, action: #selector(soundButtonAction), for: .touchUpInside)
+        self.soundButton.adjustsImageWhenHighlighted = false
         
         if let image = UIImage(named: type.soundName) {
             self.soundButton.imageView?.contentMode = .scaleToFill
@@ -80,6 +97,7 @@ class ViewController: BaseViewController {
             }
             
         }
+        self.addCount()
         
        
     }

@@ -77,12 +77,21 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gear.circle" catalog="system"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-ij-s4B">
+                                <rect key="frame" x="175.66666666666666" y="188.66666666666666" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ta3-AC-yVW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="05B-YL-ZLK"/>
+                            <constraint firstItem="ta3-AC-yVW" firstAttribute="top" secondItem="SfJ-ij-s4B" secondAttribute="bottom" constant="40" id="2qt-bh-VXM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUS-OO-z8D" secondAttribute="trailing" constant="30" id="6Pc-cR-T6p"/>
+                            <constraint firstItem="ta3-AC-yVW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jgz-3b-bmx"/>
+                            <constraint firstItem="SfJ-ij-s4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OdX-np-a2M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ta3-AC-yVW" secondAttribute="trailing" constant="20" id="hLZ-Q9-qBD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KUS-OO-z8D" secondAttribute="bottom" constant="30" id="hUo-cf-0NB"/>
                             <constraint firstItem="ta3-AC-yVW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yrr-cs-qar"/>
@@ -90,6 +99,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ivx-xT-cVV"/>
                     <connections>
+                        <outlet property="countLabel" destination="SfJ-ij-s4B" id="gsM-76-bKf"/>
                         <outlet property="settingButton" destination="KUS-OO-z8D" id="krG-hp-q2T"/>
                         <outlet property="soundButton" destination="ta3-AC-yVW" id="Eao-9Z-vtA"/>
                     </connections>
@@ -97,36 +107,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-324" y="-182"/>
-        </scene>
-        <!--Select View Controller-->
-        <scene sceneID="Mlx-JQ-xcY">
-            <objects>
-                <viewController id="Adt-IV-qQo" customClass="SelectViewController" customModule="GodPractice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UcL-b5-L2j">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="dbn-yA-qx5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lOF-BD-UI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="495" y="-182"/>
-        </scene>
-        <!--Setting View Controller-->
-        <scene sceneID="WT1-b9-Xke">
-            <objects>
-                <viewController id="STj-zV-v7J" customClass="SettingViewController" customModule="GodPractice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4UQ-BJ-c7W">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Z9Q-Kv-fQI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GK8-0a-IQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1348" y="-346"/>
         </scene>
     </scenes>
     <resources>

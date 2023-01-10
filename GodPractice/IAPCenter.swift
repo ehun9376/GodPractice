@@ -126,6 +126,10 @@ class IAPCenter: NSObject {
         }
     }
     
+    func restore() {
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
+    
     
 }
 extension IAPCenter: SKProductsRequestDelegate {
