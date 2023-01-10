@@ -16,6 +16,21 @@
 		364F4A9C296B94B300BE87D1 /* GodPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4A9B296B94B300BE87D1 /* GodPracticeTests.swift */; };
 		364F4AA6296B94B300BE87D1 /* GodPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AA5296B94B300BE87D1 /* GodPracticeUITests.swift */; };
 		364F4AA8296B94B300BE87D1 /* GodPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AA7296B94B300BE87D1 /* GodPracticeUITestsLaunchTests.swift */; };
+		364F4AB9296D346400BE87D1 /* IAPCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AB8296D346400BE87D1 /* IAPCenter.swift */; };
+		364F4ABD296D34BC00BE87D1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4ABC296D34BC00BE87D1 /* BaseViewController.swift */; };
+		364F4AC0296D34C300BE87D1 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4ABE296D34C300BE87D1 /* BaseCollectionViewController.swift */; };
+		364F4AC1296D34C300BE87D1 /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4ABF296D34C300BE87D1 /* CollectionViewAdapter.swift */; };
+		364F4AC5296D34C900BE87D1 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AC2296D34C900BE87D1 /* BaseTableViewController.swift */; };
+		364F4AC6296D34C900BE87D1 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AC3296D34C900BE87D1 /* TableViewAdapter.swift */; };
+		364F4AC7296D34C900BE87D1 /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AC4296D34C900BE87D1 /* CellProtocol.swift */; };
+		364F4ACA296D34DC00BE87D1 /* StackBottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AC8296D34DC00BE87D1 /* StackBottomBarView.swift */; };
+		364F4ACB296D34DC00BE87D1 /* SwiftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AC9296D34DC00BE87D1 /* SwiftButton.swift */; };
+		364F4ACD296D350E00BE87D1 /* UserInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4ACC296D350E00BE87D1 /* UserInfoCenter.swift */; };
+		364F4ACF296D362500BE87D1 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4ACE296D362500BE87D1 /* SelectViewController.swift */; };
+		364F4AD1296D363600BE87D1 /* CodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AD0296D363600BE87D1 /* CodeModel.swift */; };
+		364F4AD4296D365700BE87D1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AD2296D365700BE87D1 /* SettingCell.swift */; };
+		364F4AD5296D365700BE87D1 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AD3296D365700BE87D1 /* SettingCell.xib */; };
+		364F4AD7296D387700BE87D1 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +64,21 @@
 		364F4AA1296B94B300BE87D1 /* GodPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GodPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4AA5296B94B300BE87D1 /* GodPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodPracticeUITests.swift; sourceTree = "<group>"; };
 		364F4AA7296B94B300BE87D1 /* GodPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		364F4AB8296D346400BE87D1 /* IAPCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPCenter.swift; sourceTree = "<group>"; };
+		364F4ABC296D34BC00BE87D1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		364F4ABE296D34C300BE87D1 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		364F4ABF296D34C300BE87D1 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapter.swift; sourceTree = "<group>"; };
+		364F4AC2296D34C900BE87D1 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		364F4AC3296D34C900BE87D1 /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		364F4AC4296D34C900BE87D1 /* CellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		364F4AC8296D34DC00BE87D1 /* StackBottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackBottomBarView.swift; sourceTree = "<group>"; };
+		364F4AC9296D34DC00BE87D1 /* SwiftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftButton.swift; sourceTree = "<group>"; };
+		364F4ACC296D350E00BE87D1 /* UserInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCenter.swift; sourceTree = "<group>"; };
+		364F4ACE296D362500BE87D1 /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		364F4AD0296D363600BE87D1 /* CodeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeModel.swift; sourceTree = "<group>"; };
+		364F4AD2296D365700BE87D1 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		364F4AD3296D365700BE87D1 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
+		364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +132,21 @@
 				364F4A84296B94B100BE87D1 /* AppDelegate.swift */,
 				364F4A86296B94B100BE87D1 /* SceneDelegate.swift */,
 				364F4A88296B94B100BE87D1 /* ViewController.swift */,
+				364F4AB8296D346400BE87D1 /* IAPCenter.swift */,
+				364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */,
+				364F4ABC296D34BC00BE87D1 /* BaseViewController.swift */,
+				364F4ABE296D34C300BE87D1 /* BaseCollectionViewController.swift */,
+				364F4ABF296D34C300BE87D1 /* CollectionViewAdapter.swift */,
+				364F4AC2296D34C900BE87D1 /* BaseTableViewController.swift */,
+				364F4AC4296D34C900BE87D1 /* CellProtocol.swift */,
+				364F4AC3296D34C900BE87D1 /* TableViewAdapter.swift */,
+				364F4AC8296D34DC00BE87D1 /* StackBottomBarView.swift */,
+				364F4AC9296D34DC00BE87D1 /* SwiftButton.swift */,
+				364F4ACC296D350E00BE87D1 /* UserInfoCenter.swift */,
+				364F4ACE296D362500BE87D1 /* SelectViewController.swift */,
+				364F4AD0296D363600BE87D1 /* CodeModel.swift */,
+				364F4AD2296D365700BE87D1 /* SettingCell.swift */,
+				364F4AD3296D365700BE87D1 /* SettingCell.xib */,
 				364F4A8A296B94B100BE87D1 /* Main.storyboard */,
 				364F4A8D296B94B200BE87D1 /* Assets.xcassets */,
 				364F4A8F296B94B200BE87D1 /* LaunchScreen.storyboard */,
@@ -233,6 +278,7 @@
 			files = (
 				364F4A91296B94B200BE87D1 /* LaunchScreen.storyboard in Resources */,
 				364F4A8E296B94B200BE87D1 /* Assets.xcassets in Resources */,
+				364F4AD5296D365700BE87D1 /* SettingCell.xib in Resources */,
 				364F4A8C296B94B100BE87D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +304,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364F4ABD296D34BC00BE87D1 /* BaseViewController.swift in Sources */,
+				364F4AD1296D363600BE87D1 /* CodeModel.swift in Sources */,
+				364F4AC1296D34C300BE87D1 /* CollectionViewAdapter.swift in Sources */,
+				364F4AC5296D34C900BE87D1 /* BaseTableViewController.swift in Sources */,
 				364F4A89296B94B100BE87D1 /* ViewController.swift in Sources */,
+				364F4AB9296D346400BE87D1 /* IAPCenter.swift in Sources */,
+				364F4AD7296D387700BE87D1 /* KeyboardHelper.swift in Sources */,
+				364F4ACB296D34DC00BE87D1 /* SwiftButton.swift in Sources */,
+				364F4AC6296D34C900BE87D1 /* TableViewAdapter.swift in Sources */,
+				364F4AC0296D34C300BE87D1 /* BaseCollectionViewController.swift in Sources */,
+				364F4ACD296D350E00BE87D1 /* UserInfoCenter.swift in Sources */,
+				364F4AD4296D365700BE87D1 /* SettingCell.swift in Sources */,
+				364F4ACA296D34DC00BE87D1 /* StackBottomBarView.swift in Sources */,
+				364F4ACF296D362500BE87D1 /* SelectViewController.swift in Sources */,
 				364F4A85296B94B100BE87D1 /* AppDelegate.swift in Sources */,
 				364F4A87296B94B100BE87D1 /* SceneDelegate.swift in Sources */,
+				364F4AC7296D34C900BE87D1 /* CellProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
