@@ -52,9 +52,24 @@ enum ProductID {
         case .ring:
             return "金剛鈴"
         case .inSin:
-            return "引馨"
+            return "引磬"
         case .gong:
             return "銅鑼"
+        }
+    }
+    
+    var soundName: String {
+        switch self {
+        case .woodFish:
+            return "woodFish"
+        case .drum:
+            return "drum"
+        case .ring:
+            return "ring"
+        case .inSin:
+            return "inSin"
+        case .gong:
+            return "gong"
         }
     }
     
@@ -78,7 +93,6 @@ class IAPCenter: NSObject {
     func getProductIDs() -> [String] {
         
         return [
-            ProductID.woodFish.id,
             ProductID.drum.id,
             ProductID.ring.id,
             ProductID.inSin.id,

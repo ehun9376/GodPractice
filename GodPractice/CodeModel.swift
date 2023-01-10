@@ -33,5 +33,12 @@ class CodeModel: Equatable {
     
     static let gong: CodeModel = .init(text: ProductID.gong.text, number: 4)
 
+    static let items: [CodeModel] = [
+        .woodFish,
+        .drum,
+        .ring,
+        .inSin,
+        .gong
+    ]
     
 }

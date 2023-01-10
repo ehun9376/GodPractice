@@ -31,6 +31,13 @@
 		364F4AD4296D365700BE87D1 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AD2296D365700BE87D1 /* SettingCell.swift */; };
 		364F4AD5296D365700BE87D1 /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AD3296D365700BE87D1 /* SettingCell.xib */; };
 		364F4AD7296D387700BE87D1 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */; };
+		364F4AD9296D3BF200BE87D1 /* woodFish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AD8296D3BF200BE87D1 /* woodFish.mp3 */; };
+		364F4ADB296D3C8400BE87D1 /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4ADA296D3C8400BE87D1 /* drum.mp3 */; };
+		364F4ADD296D3DCA00BE87D1 /* ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4ADC296D3DCA00BE87D1 /* ring.mp3 */; };
+		364F4ADF296D3F1A00BE87D1 /* inSin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4ADE296D3F1A00BE87D1 /* inSin.mp3 */; };
+		364F4AE1296D3F4F00BE87D1 /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AE0296D3F4F00BE87D1 /* gong.mp3 */; };
+		364F4AE3296D3FE700BE87D1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */; };
+		364F4AE5296D4C4400BE87D1 /* LaunchviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +86,13 @@
 		364F4AD2296D365700BE87D1 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		364F4AD3296D365700BE87D1 /* SettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		364F4AD8296D3BF200BE87D1 /* woodFish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woodFish.mp3; sourceTree = "<group>"; };
+		364F4ADA296D3C8400BE87D1 /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
+		364F4ADC296D3DCA00BE87D1 /* ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ring.mp3; sourceTree = "<group>"; };
+		364F4ADE296D3F1A00BE87D1 /* inSin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inSin.mp3; sourceTree = "<group>"; };
+		364F4AE0296D3F4F00BE87D1 /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
+		364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchviewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,9 @@
 				364F4A84296B94B100BE87D1 /* AppDelegate.swift */,
 				364F4A86296B94B100BE87D1 /* SceneDelegate.swift */,
 				364F4A88296B94B100BE87D1 /* ViewController.swift */,
+				364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */,
+				364F4ACE296D362500BE87D1 /* SelectViewController.swift */,
+				364F4AD0296D363600BE87D1 /* CodeModel.swift */,
 				364F4AB8296D346400BE87D1 /* IAPCenter.swift */,
 				364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */,
 				364F4ABC296D34BC00BE87D1 /* BaseViewController.swift */,
@@ -143,14 +160,18 @@
 				364F4AC8296D34DC00BE87D1 /* StackBottomBarView.swift */,
 				364F4AC9296D34DC00BE87D1 /* SwiftButton.swift */,
 				364F4ACC296D350E00BE87D1 /* UserInfoCenter.swift */,
-				364F4ACE296D362500BE87D1 /* SelectViewController.swift */,
-				364F4AD0296D363600BE87D1 /* CodeModel.swift */,
 				364F4AD2296D365700BE87D1 /* SettingCell.swift */,
 				364F4AD3296D365700BE87D1 /* SettingCell.xib */,
+				364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */,
 				364F4A8A296B94B100BE87D1 /* Main.storyboard */,
 				364F4A8D296B94B200BE87D1 /* Assets.xcassets */,
 				364F4A8F296B94B200BE87D1 /* LaunchScreen.storyboard */,
 				364F4A92296B94B200BE87D1 /* Info.plist */,
+				364F4AD8296D3BF200BE87D1 /* woodFish.mp3 */,
+				364F4ADA296D3C8400BE87D1 /* drum.mp3 */,
+				364F4ADC296D3DCA00BE87D1 /* ring.mp3 */,
+				364F4ADE296D3F1A00BE87D1 /* inSin.mp3 */,
+				364F4AE0296D3F4F00BE87D1 /* gong.mp3 */,
 			);
 			path = GodPractice;
 			sourceTree = "<group>";
@@ -276,9 +297,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364F4ADB296D3C8400BE87D1 /* drum.mp3 in Resources */,
 				364F4A91296B94B200BE87D1 /* LaunchScreen.storyboard in Resources */,
 				364F4A8E296B94B200BE87D1 /* Assets.xcassets in Resources */,
 				364F4AD5296D365700BE87D1 /* SettingCell.xib in Resources */,
+				364F4AD9296D3BF200BE87D1 /* woodFish.mp3 in Resources */,
+				364F4AE1296D3F4F00BE87D1 /* gong.mp3 in Resources */,
+				364F4ADD296D3DCA00BE87D1 /* ring.mp3 in Resources */,
+				364F4ADF296D3F1A00BE87D1 /* inSin.mp3 in Resources */,
 				364F4A8C296B94B100BE87D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +335,7 @@
 				364F4AC1296D34C300BE87D1 /* CollectionViewAdapter.swift in Sources */,
 				364F4AC5296D34C900BE87D1 /* BaseTableViewController.swift in Sources */,
 				364F4A89296B94B100BE87D1 /* ViewController.swift in Sources */,
+				364F4AE3296D3FE700BE87D1 /* SettingViewController.swift in Sources */,
 				364F4AB9296D346400BE87D1 /* IAPCenter.swift in Sources */,
 				364F4AD7296D387700BE87D1 /* KeyboardHelper.swift in Sources */,
 				364F4ACB296D34DC00BE87D1 /* SwiftButton.swift in Sources */,
@@ -318,6 +345,7 @@
 				364F4AD4296D365700BE87D1 /* SettingCell.swift in Sources */,
 				364F4ACA296D34DC00BE87D1 /* StackBottomBarView.swift in Sources */,
 				364F4ACF296D362500BE87D1 /* SelectViewController.swift in Sources */,
+				364F4AE5296D4C4400BE87D1 /* LaunchviewController.swift in Sources */,
 				364F4A85296B94B100BE87D1 /* AppDelegate.swift in Sources */,
 				364F4A87296B94B100BE87D1 /* SceneDelegate.swift in Sources */,
 				364F4AC7296D34C900BE87D1 /* CellProtocol.swift in Sources */,

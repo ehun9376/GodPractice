@@ -138,6 +138,14 @@ class BaseViewController: UIViewController {
             self.navigationItem.backButtonDisplayMode = .minimal
         }
         
+        if #available(iOS 13.0, *) {
+            let barAppearance = UINavigationBarAppearance()
+            barAppearance.backgroundColor = .white
+            barAppearance.shadowColor = .clear
+            navigationItem.standardAppearance = barAppearance
+            navigationItem.scrollEdgeAppearance = barAppearance
+        }
+        
         if #available(iOS 15.0, *){
             UITableView.appearance().sectionHeaderTopPadding = 0
         }

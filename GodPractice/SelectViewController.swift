@@ -42,7 +42,6 @@ class SelectViewController: BaseTableViewController {
             
             rowModels.append(SettingCellRowModel(title: model.text,
                                                  detail: nil,
-                                                 //TODO: - 換圖
                                                  imageName: isSelected ? "CircleCheckMark" : "",
                                                  imageTintColor: .red ,
                                                  showSwitch: false,
@@ -54,7 +53,7 @@ class SelectViewController: BaseTableViewController {
             }))
         }
         self.adapter?.updateTableViewData(rowModels: rowModels)
-    }
+    }   
     
     override func setBottomButtons() -> [BottomBarButton] {
         

@@ -26,12 +26,15 @@ class SettingCellRowModel: CellRowModel {
     
     var switchON: Bool = true
     
+    var systemImageName: String?
+    
     var switchAction: ((Bool)->())?
     
     init(
         title: String? = nil,
         detail: String? = nil,
         imageName: String? = nil,
+        systemImageName: String? = nil,
         imageTintColor: UIColor? = .red,
         showSwitch: Bool = false,
         switchON: Bool = true,
@@ -41,6 +44,7 @@ class SettingCellRowModel: CellRowModel {
             self.title = title
             self.detail = detail
             self.imageName = imageName
+            self.systemImageName = systemImageName
             self.imageTintColor = imageTintColor
             self.showSwitch = showSwitch
             self.switchAction = switchAction
@@ -109,7 +113,18 @@ extension SettingCell: BaseCellView {
         self.functionSwitch.isHidden = !rowModel.showSwitch
         self.functionSwitch.isOn = rowModel.switchON
         
-        self.iconImageView.image = UIImage(systemName: rowModel.imageName ?? "")?.withRenderingMode(.alwaysTemplate).resizeImage(targetSize: .init(width: 30, height: 30)).withTintColor(.systemRed)
+        if let imageName = rowModel.imageName {
+            self.iconImageView.image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate).resizeImage(targetSize: .init(width: 30, height: 30)).withTintColor(.systemRed)
+        } else {
+            if let systemImageName = rowModel.systemImageName {
+                self.iconImageView.image = UIImage(systemName: systemImageName)?.withRenderingMode(.alwaysTemplate).resizeImage(targetSize: .init(width: 30, height: 30)).withTintColor(.systemRed)
+            }
+        }
+        
+        
+
+        
+        
         
     }
     
