@@ -149,33 +149,15 @@
 			children = (
 				364F4A84296B94B100BE87D1 /* AppDelegate.swift */,
 				364F4A86296B94B100BE87D1 /* SceneDelegate.swift */,
-				364F4A88296B94B100BE87D1 /* ViewController.swift */,
-				364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */,
-				364F4ACE296D362500BE87D1 /* SelectViewController.swift */,
-				364F4AD0296D363600BE87D1 /* CodeModel.swift */,
-				364F4AB8296D346400BE87D1 /* IAPCenter.swift */,
-				364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */,
-				364F4ABC296D34BC00BE87D1 /* BaseViewController.swift */,
-				364F4ABE296D34C300BE87D1 /* BaseCollectionViewController.swift */,
-				364F4ABF296D34C300BE87D1 /* CollectionViewAdapter.swift */,
-				364F4AC2296D34C900BE87D1 /* BaseTableViewController.swift */,
-				364F4AC4296D34C900BE87D1 /* CellProtocol.swift */,
-				364F4AC3296D34C900BE87D1 /* TableViewAdapter.swift */,
-				364F4AC8296D34DC00BE87D1 /* StackBottomBarView.swift */,
-				364F4AC9296D34DC00BE87D1 /* SwiftButton.swift */,
-				364F4ACC296D350E00BE87D1 /* UserInfoCenter.swift */,
-				364F4AD2296D365700BE87D1 /* SettingCell.swift */,
-				364F4AD3296D365700BE87D1 /* SettingCell.xib */,
-				364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */,
-				364F4A8A296B94B100BE87D1 /* Main.storyboard */,
+				364F4AEA296EADEE00BE87D1 /* CustomView */,
+				364F4AE9296EADDE00BE87D1 /* Base */,
+				364F4AE7296EADBA00BE87D1 /* Helper */,
+				364F4AE6296EADA900BE87D1 /* Page */,
+				364F4AED296EAE1500BE87D1 /* Cell */,
 				364F4A8D296B94B200BE87D1 /* Assets.xcassets */,
 				364F4A8F296B94B200BE87D1 /* LaunchScreen.storyboard */,
 				364F4A92296B94B200BE87D1 /* Info.plist */,
-				364F4AD8296D3BF200BE87D1 /* woodFish.mp3 */,
-				364F4ADC296D3DCA00BE87D1 /* ring.mp3 */,
-				94FF7B31296D9D1B008D3C53 /* drum.mp3 */,
-				364F4ADE296D3F1A00BE87D1 /* inSin.mp3 */,
-				364F4AE0296D3F4F00BE87D1 /* gong.mp3 */,
+				364F4AEE296EAE2300BE87D1 /* Music */,
 			);
 			path = GodPractice;
 			sourceTree = "<group>";
@@ -195,6 +177,80 @@
 				364F4AA7296B94B300BE87D1 /* GodPracticeUITestsLaunchTests.swift */,
 			);
 			path = GodPracticeUITests;
+			sourceTree = "<group>";
+		};
+		364F4AE6296EADA900BE87D1 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				364F4A8A296B94B100BE87D1 /* Main.storyboard */,
+				364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */,
+				364F4A88296B94B100BE87D1 /* ViewController.swift */,
+				364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */,
+				364F4ACE296D362500BE87D1 /* SelectViewController.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		364F4AE7296EADBA00BE87D1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				364F4ACC296D350E00BE87D1 /* UserInfoCenter.swift */,
+				364F4AB8296D346400BE87D1 /* IAPCenter.swift */,
+				364F4AD6296D387700BE87D1 /* KeyboardHelper.swift */,
+				364F4AE8296EADD100BE87D1 /* Model */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		364F4AE8296EADD100BE87D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				364F4AD0296D363600BE87D1 /* CodeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		364F4AE9296EADDE00BE87D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				364F4ABC296D34BC00BE87D1 /* BaseViewController.swift */,
+				364F4ABE296D34C300BE87D1 /* BaseCollectionViewController.swift */,
+				364F4ABF296D34C300BE87D1 /* CollectionViewAdapter.swift */,
+				364F4AC2296D34C900BE87D1 /* BaseTableViewController.swift */,
+				364F4AC4296D34C900BE87D1 /* CellProtocol.swift */,
+				364F4AC3296D34C900BE87D1 /* TableViewAdapter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		364F4AEA296EADEE00BE87D1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				364F4AC8296D34DC00BE87D1 /* StackBottomBarView.swift */,
+				364F4AC9296D34DC00BE87D1 /* SwiftButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		364F4AED296EAE1500BE87D1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				364F4AD2296D365700BE87D1 /* SettingCell.swift */,
+				364F4AD3296D365700BE87D1 /* SettingCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		364F4AEE296EAE2300BE87D1 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				364F4AD8296D3BF200BE87D1 /* woodFish.mp3 */,
+				364F4ADC296D3DCA00BE87D1 /* ring.mp3 */,
+				94FF7B31296D9D1B008D3C53 /* drum.mp3 */,
+				364F4ADE296D3F1A00BE87D1 /* inSin.mp3 */,
+				364F4AE0296D3F4F00BE87D1 /* gong.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		94FF7B33296DA1CF008D3C53 /* Frameworks */ = {
