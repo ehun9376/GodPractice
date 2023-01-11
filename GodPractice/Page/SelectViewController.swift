@@ -53,11 +53,6 @@ class SelectViewController: BaseTableViewController {
                     self?.selectedModels = [model]
                     self?.setupRow()
                 } else {
-                    if true {
-                        self?.selectedModels = [model]
-                        self?.setupRow()
-                        return
-                    }
                     
                     if let iaped = UserInfoCenter.shared.loadValue(.iaped) as? [String], iaped.contains(model.data.id) {
                         self?.selectedModels = [model]

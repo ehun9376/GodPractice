@@ -52,15 +52,15 @@ enum ProductID {
         case .inSin: return "com.activision.callofduty.shooter.tier_100"
             
             //銅鑼
-        case .gong: return "com.activision.callofduty.shooter.tier_100"
+        case .gong: return "e"
             
-        case .board: return "com.activision.callofduty.shooter.tier_100"
+        case .board: return "f"
             
-        case .clock: return "com.activision.callofduty.shooter.tier_100"
+        case .clock: return "g"
             
-        case .dotRing: return "com.activision.callofduty.shooter.tier_100"
+        case .dotRing: return "h"
             
-        case .traingle: return "com.activision.callofduty.shooter.tier_100"
+        case .traingle: return "i"
 
         }
     }
@@ -133,10 +133,15 @@ class IAPCenter: NSObject {
     func getProductIDs() -> [String] {
         
         return [
-            ProductID.drum.id,
-            ProductID.ring.id,
+            ProductID.woodFish.id,
+            ProductID.gong.id,
             ProductID.inSin.id,
-            ProductID.gong.id
+            ProductID.inSin.id,
+            ProductID.ring.id,
+            ProductID.drum.id,
+            ProductID.board.id,
+            ProductID.clock.id,
+            ProductID.traingle.id
         ]
     }
     
