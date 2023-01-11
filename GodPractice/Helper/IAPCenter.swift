@@ -9,6 +9,7 @@ import Foundation
 import StoreKit
 enum ProductID {
     
+
     ///木魚
     case woodFish
     
@@ -23,6 +24,18 @@ enum ProductID {
     
     ///銅鑼
     case gong
+    
+    ///響板
+    case board
+    
+    ///鐘
+    case clock
+    
+    ///沙鈴
+    case dotRing
+    
+    ///三角鐵
+    case traingle
     
     var id: String  {
         switch self {
@@ -40,6 +53,15 @@ enum ProductID {
             
             //銅鑼
         case .gong: return "com.activision.callofduty.shooter.tier_100"
+            
+        case .board: return "com.activision.callofduty.shooter.tier_100"
+            
+        case .clock: return "com.activision.callofduty.shooter.tier_100"
+            
+        case .dotRing: return "com.activision.callofduty.shooter.tier_100"
+            
+        case .traingle: return "com.activision.callofduty.shooter.tier_100"
+
         }
     }
     
@@ -55,6 +77,15 @@ enum ProductID {
             return "引磬"
         case .gong:
             return "銅鑼"
+        case .board:
+            return "響板"
+        case .clock:
+            return "鐘"
+        case .dotRing:
+            return "沙鈴"
+        case .traingle:
+            return "三角鐵"
+            
         }
     }
     
@@ -70,6 +101,14 @@ enum ProductID {
             return "inSin"
         case .gong:
             return "gong"
+        case .board:
+            return "board"
+        case .clock:
+            return "clock"
+        case .dotRing:
+            return "dotRing"
+        case .traingle:
+            return "traingle"
         }
     }
     
@@ -87,6 +126,7 @@ class IAPCenter: NSObject {
     
     var storeComplete: (()->())?
     
+    let types: [ProductID] = [.woodFish,.gong,.inSin,.ring,.drum,.board,.clock,.dotRing,.traingle]
  
     
     //總共有多少購買項目

@@ -37,6 +37,10 @@
 		364F4AE1296D3F4F00BE87D1 /* gong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AE0296D3F4F00BE87D1 /* gong.mp3 */; };
 		364F4AE3296D3FE700BE87D1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */; };
 		364F4AE5296D4C4400BE87D1 /* LaunchviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */; };
+		364F4AF3296EB76000BE87D1 /* board.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AEF296EB76000BE87D1 /* board.mp3 */; };
+		364F4AF4296EB76000BE87D1 /* clock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AF0296EB76000BE87D1 /* clock.mp3 */; };
+		364F4AF5296EB76000BE87D1 /* traingle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AF1296EB76000BE87D1 /* traingle.mp3 */; };
+		364F4AF6296EB76000BE87D1 /* dotRing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AF2296EB76000BE87D1 /* dotRing.mp3 */; };
 		94FF7B32296D9D1B008D3C53 /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94FF7B31296D9D1B008D3C53 /* drum.mp3 */; };
 		94FF7B35296DA1CF008D3C53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FF7B34296DA1CF008D3C53 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
@@ -93,6 +97,10 @@
 		364F4AE0296D3F4F00BE87D1 /* gong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gong.mp3; sourceTree = "<group>"; };
 		364F4AE2296D3FE700BE87D1 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		364F4AE4296D4C4400BE87D1 /* LaunchviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchviewController.swift; sourceTree = "<group>"; };
+		364F4AEF296EB76000BE87D1 /* board.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = board.mp3; sourceTree = "<group>"; };
+		364F4AF0296EB76000BE87D1 /* clock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clock.mp3; sourceTree = "<group>"; };
+		364F4AF1296EB76000BE87D1 /* traingle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = traingle.mp3; sourceTree = "<group>"; };
+		364F4AF2296EB76000BE87D1 /* dotRing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dotRing.mp3; sourceTree = "<group>"; };
 		94FF7B31296D9D1B008D3C53 /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
 		94FF7B34296DA1CF008D3C53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -244,6 +252,10 @@
 		364F4AEE296EAE2300BE87D1 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				364F4AEF296EB76000BE87D1 /* board.mp3 */,
+				364F4AF0296EB76000BE87D1 /* clock.mp3 */,
+				364F4AF2296EB76000BE87D1 /* dotRing.mp3 */,
+				364F4AF1296EB76000BE87D1 /* traingle.mp3 */,
 				364F4AD8296D3BF200BE87D1 /* woodFish.mp3 */,
 				364F4ADC296D3DCA00BE87D1 /* ring.mp3 */,
 				94FF7B31296D9D1B008D3C53 /* drum.mp3 */,
@@ -366,8 +378,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				364F4A91296B94B200BE87D1 /* LaunchScreen.storyboard in Resources */,
+				364F4AF6296EB76000BE87D1 /* dotRing.mp3 in Resources */,
+				364F4AF4296EB76000BE87D1 /* clock.mp3 in Resources */,
 				364F4A8E296B94B200BE87D1 /* Assets.xcassets in Resources */,
 				364F4AD5296D365700BE87D1 /* SettingCell.xib in Resources */,
+				364F4AF5296EB76000BE87D1 /* traingle.mp3 in Resources */,
+				364F4AF3296EB76000BE87D1 /* board.mp3 in Resources */,
 				364F4AD9296D3BF200BE87D1 /* woodFish.mp3 in Resources */,
 				94FF7B32296D9D1B008D3C53 /* drum.mp3 in Resources */,
 				364F4AE1296D3F4F00BE87D1 /* gong.mp3 in Resources */,
@@ -591,11 +607,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 89P6MA394F;
+				DEVELOPMENT_TEAM = NZT54R9366;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GodPractice/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "木魚模擬器";
@@ -610,10 +625,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.annaBegg.GodPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = "tw.com.annaBegg.GodPractice-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = beggDevice;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -628,11 +642,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 89P6MA394F;
+				DEVELOPMENT_TEAM = NZT54R9366;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GodPractice/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "木魚模擬器";
@@ -647,10 +660,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.annaBegg.GodPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = "tw.com.annaBegg.GodPractice-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = beggDevice;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

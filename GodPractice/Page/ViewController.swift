@@ -31,7 +31,7 @@ class ViewController: BaseViewController {
         
         if let current = UserInfoCenter.shared.loadValue(.current) as? String {
             
-            let types: [ProductID] = [.woodFish,.gong,.inSin,.ring,.drum]
+            let types: [ProductID] = IAPCenter.shared.types
             
             if let type = types.first(where: {$0.text == current}) {
                 self.setSoundButton(defaultSet: true, type: type)

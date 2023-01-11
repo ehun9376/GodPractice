@@ -35,13 +35,26 @@ class CodeModel: Equatable {
     static let inSin: CodeModel = .init(text: ProductID.inSin.text, number: 3, data: .inSin)
     
     static let gong: CodeModel = .init(text: ProductID.gong.text, number: 4, data: .gong)
+    
+    static let board: CodeModel = .init(text: ProductID.board.text, number: 5, data: .board)
+    
+    static let clock: CodeModel = .init(text: ProductID.clock.text, number: 6, data: .clock)
+    
+    static let dotRing: CodeModel = .init(text: ProductID.dotRing.text, number: 7, data: .dotRing)
+    
+    static let traingle: CodeModel = .init(text: ProductID.traingle.text, number: 8, data: .traingle)
+    
 
     static let items: [CodeModel] = [
         .woodFish,
         .drum,
         .ring,
         .inSin,
-        .gong
+        .gong,
+        .board,
+        .clock,
+        .dotRing,
+        .traingle
     ]
     
 }
