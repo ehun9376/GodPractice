@@ -70,7 +70,11 @@ class ViewController: BaseViewController {
         
         
         
-        self.soundButton.configuration = nil
+        if #available(iOS 15.0, *) {
+            self.soundButton.configuration = nil
+        } else {
+            // Fallback on earlier versions
+        }
         self.soundButton.layer.cornerRadius = self.settingButton.frame.height / 2
         self.soundButton.clipsToBounds = true
         self.soundButton.setTitle(nil, for: .normal)
