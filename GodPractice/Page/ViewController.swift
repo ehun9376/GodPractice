@@ -45,6 +45,10 @@ class ViewController: BaseViewController {
     }
     
     func setSettingButton() {
+        if #available(iOS 15.0, *) {
+            self.settingButton.configuration = nil
+        }
+        self.settingButton.setTitle("", for: .normal)
         self.settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
     }
     
