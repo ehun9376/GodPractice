@@ -40,7 +40,7 @@ enum ProductID {
     var id: String  {
         switch self {
             //木魚
-        case .woodFish: return  "com.activision.callofduty.shooter.topup_50_a"
+        case .woodFish: return  ""
             
             //鼓
         case .drum: return "com.activision.callofduty.shooter.tier_50"
@@ -52,7 +52,7 @@ enum ProductID {
         case .inSin: return "com.activision.callofduty.shooter.tier_100"
             
             //銅鑼
-        case .gong: return "e"
+        case .gong: return "com.activision.callofduty.shooter.topup_50_a"
             
         case .board: return "f"
             
@@ -126,22 +126,31 @@ class IAPCenter: NSObject {
     
     var storeComplete: (()->())?
     
-    let types: [ProductID] = [.woodFish,.gong,.inSin,.ring,.drum,.board,.clock,.dotRing,.traingle]
- 
+    let types: [ProductID] = [
+        .woodFish,
+//        .gong,
+        .inSin,
+        .ring,
+        .drum,
+//        .board,
+//        .clock,
+//        .dotRing,
+//        .traingle
+    ]
+    
     
     //總共有多少購買項目
     func getProductIDs() -> [String] {
         
         return [
-            ProductID.woodFish.id,
-            ProductID.gong.id,
-            ProductID.inSin.id,
+//            ProductID.woodFish.id,
+//            ProductID.gong.id,
             ProductID.inSin.id,
             ProductID.ring.id,
             ProductID.drum.id,
-            ProductID.board.id,
-            ProductID.clock.id,
-            ProductID.traingle.id
+//            ProductID.board.id,
+//            ProductID.clock.id,
+//            ProductID.traingle.id
         ]
     }
     
