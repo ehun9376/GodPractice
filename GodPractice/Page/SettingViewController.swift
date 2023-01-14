@@ -15,6 +15,7 @@ class SettingViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.defaultTableView.backgroundColor = .white
         self.regisCellID(cellIDs: [
             "SettingCell",
             "TagCell"

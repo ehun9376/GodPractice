@@ -59,7 +59,7 @@ class SelectViewController: BaseTableViewController {
                         self?.setupRow()
                     } else {
                         self?.showAlert(title: "提示",
-                                        message: "要購買才可以用喔\n\(model.data.id)",
+                                        message: "目前未開放購買，要購買才可以用喔\n\(model.data.id)",
                                         confirmTitle: "前往購買",
                                         cancelTitle: "取消",
                                         confirmAction: {

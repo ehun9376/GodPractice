@@ -22,6 +22,7 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white
         self.setSettingButton()
         self.addCount()
     }
@@ -48,7 +49,7 @@ class ViewController: BaseViewController {
         if #available(iOS 15.0, *) {
             self.settingButton.configuration = nil
         }
-        self.settingButton.setTitle("", for: .normal)
+        self.settingButton.setTitle("設定", for: .normal)
         self.settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
     }
     

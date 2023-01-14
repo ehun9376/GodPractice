@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		364F4A85296B94B100BE87D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4A84296B94B100BE87D1 /* AppDelegate.swift */; };
-		364F4A87296B94B100BE87D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4A86296B94B100BE87D1 /* SceneDelegate.swift */; };
 		364F4A89296B94B100BE87D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4A88296B94B100BE87D1 /* ViewController.swift */; };
 		364F4A8C296B94B100BE87D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F4A8A296B94B100BE87D1 /* Main.storyboard */; };
 		364F4A8E296B94B200BE87D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364F4A8D296B94B200BE87D1 /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		364F4AF5296EB76000BE87D1 /* traingle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AF1296EB76000BE87D1 /* traingle.mp3 */; };
 		364F4AF6296EB76000BE87D1 /* dotRing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 364F4AF2296EB76000BE87D1 /* dotRing.mp3 */; };
 		94FF7B32296D9D1B008D3C53 /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94FF7B31296D9D1B008D3C53 /* drum.mp3 */; };
-		94FF7B35296DA1CF008D3C53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FF7B34296DA1CF008D3C53 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +63,6 @@
 /* Begin PBXFileReference section */
 		364F4A81296B94B100BE87D1 /* GodPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GodPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4A84296B94B100BE87D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		364F4A86296B94B100BE87D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		364F4A88296B94B100BE87D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		364F4A8B296B94B100BE87D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		364F4A8D296B94B200BE87D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +99,6 @@
 		364F4AF1296EB76000BE87D1 /* traingle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = traingle.mp3; sourceTree = "<group>"; };
 		364F4AF2296EB76000BE87D1 /* dotRing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dotRing.mp3; sourceTree = "<group>"; };
 		94FF7B31296D9D1B008D3C53 /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
-		94FF7B34296DA1CF008D3C53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FF7B35296DA1CF008D3C53 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				364F4A84296B94B100BE87D1 /* AppDelegate.swift */,
-				364F4A86296B94B100BE87D1 /* SceneDelegate.swift */,
 				364F4AEA296EADEE00BE87D1 /* CustomView */,
 				364F4AE9296EADDE00BE87D1 /* Base */,
 				364F4AE7296EADBA00BE87D1 /* Helper */,
@@ -268,7 +262,6 @@
 		94FF7B33296DA1CF008D3C53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94FF7B34296DA1CF008D3C53 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -431,7 +424,6 @@
 				364F4ACF296D362500BE87D1 /* SelectViewController.swift in Sources */,
 				364F4AE5296D4C4400BE87D1 /* LaunchviewController.swift in Sources */,
 				364F4A85296B94B100BE87D1 /* AppDelegate.swift in Sources */,
-				364F4A87296B94B100BE87D1 /* SceneDelegate.swift in Sources */,
 				364F4AC7296D34C900BE87D1 /* CellProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89P6MA394F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GodPractice/Info.plist;
@@ -644,7 +636,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 89P6MA394F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GodPractice/Info.plist;
