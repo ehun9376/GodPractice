@@ -50,11 +50,11 @@ class CodeModel: Equatable {
         .drum,
         .ring,
         .inSin,
-//        .gong,
-//        .board,
-//        .clock,
-//        .dotRing,
-//        .traingle
+        .gong,
+        .board,
+        .clock,
+        .dotRing,
+        .traingle
     ]
     
 }
